@@ -1,0 +1,7 @@
+{
+    "name": "FalaFreud Backend Developer Test",
+    "version": "1.0.0",
+    "description": "This is a CRUD API",
+    "title": "FalaFreud Backend Developer Test",
+    "url": "https://localhost:3000/users"
+}
