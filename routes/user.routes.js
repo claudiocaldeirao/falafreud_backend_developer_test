@@ -14,7 +14,7 @@ const userController = require('../controllers/user.controller');
  * @apiParam {Number} phone Phone of the User.
  * @apiParam {Boolean} is_admin If is a superuser.
  *
- * @apiSuccess {String} message User created successfully!
+ * @apiSuccess {String} id ID attribute of the user created.
  */
 router.post('/create', userController.UserCreate);
 

@@ -103,8 +103,8 @@ define({ "api": [
             "group": "Success 200",
             "type": "String",
             "optional": false,
-            "field": "message",
-            "description": "<p>User created successfully!</p>"
+            "field": "id",
+            "description": "<p>ID attribute of the user created.</p>"
           }
         ]
       }
