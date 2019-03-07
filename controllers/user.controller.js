@@ -31,7 +31,7 @@ exports.GetUser = function (req, res, next) {
 
 //Atualizar os atributos de um usuario.
 exports.UserUpdate = function(req, res, next) {
-    User.findOneAndUpdate(req.params.id, {$set: req.body}, function(err, user) {
+    User.findOneAndUpdate({"_id":req.params.id}, {$set: req.body}, function(err, user) {
         if(err) {
             return next(err);
         }
@@ -41,7 +41,7 @@ exports.UserUpdate = function(req, res, next) {
 
 //Deletar um usuario.
 exports.UserDelete = function(req, res, next) {
-    User.findOneAndDelete(req.params.id, function (err) {
+    User.findOneAndDelete({"_id":req.params.id}, function (err) {
         if(err) {
             return next (err);
         }
