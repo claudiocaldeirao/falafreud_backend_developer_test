@@ -6,7 +6,7 @@ const app = express();
 const userRoute = require('./routes/user.routes');
 
 //Porta do servidor.
-let port = 3000;
+let port = process.env.PORT || 3000;
 
 //Conexão com o banco de dados.
 const mongoose = require('mongoose');
