@@ -1,4 +1,4 @@
-const User = require('../models/user.model');
+const User = require('../persistence/models/user.model');
 
 //Criar novo usuario.
 exports.UserCreate = function (req, res, next) {
